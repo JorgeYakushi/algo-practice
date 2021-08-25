@@ -6,7 +6,6 @@ function productExceptSelf(nums: number[]): number[] {
   for (let index: number = 1; index < arrLength; index++) {
     ans[index] = ans[index - 1] * nums[index - 1];
   }
-  console.log(ans);
   let rightIndex: number = 1;
   for (let index: number = arrLength - 1; index >= 0; index--) {
     ans[index] = ans[index] * rightIndex;
